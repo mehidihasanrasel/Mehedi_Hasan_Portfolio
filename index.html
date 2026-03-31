@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Mehidi Hasan | Cardiologist & Internal Medicine Specialist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="pulse-ring"></div>
+      <div class="pulse-ring delay"></div>
+      <i class="fas fa-heartbeat preloader-icon"></i>
+    </div>
+  </div>
+
+  <!-- ========== HEADER / NAVBAR ========== -->
+  <header class="header" id="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top-inner">
+          <div class="header-contacts">
+            <a href="tel:+8801712345678"><i class="fas fa-phone-alt"></i> +880 1712-345678</a>
+            <a href="mailto:dr.mehidi@example.com"><i class="fas fa-envelope"></i> dr.mehidi@example.com</a>
+            <span><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</span>
+          </div>
+          <div class="header-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="#home" class="logo">
+            <span class="logo-icon"><i class="fas fa-stethoscope"></i></span>
+            <div class="logo-text">
+              <span class="logo-name">Dr. Mehidi Hasan</span>
+              <span class="logo-title">MBBS, MD, FCPS</span>
+            </div>
+          </a>
+
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#specialties" class="nav-link">Specialties</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <a href="#appointment" class="btn-appoint">
+            <i class="fas fa-calendar-check"></i> Book Appointment
+          </a>
+
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content" data-aos="fade-right">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for Consultation
+          </div>
+          <h1 class="hero-title">
+            Dr. Mehidi <em>Hasan</em>
+          </h1>
+          <p class="hero-specialty">Cardiologist & Internal Medicine Specialist</p>
+          <p class="hero-desc">
+            Providing compassionate, evidence-based cardiac care with over <strong>15 years</strong> of clinical excellence. Board-certified specialist dedicated to your heart health and overall well-being.
+          </p>
+          <div class="hero-certs">
+            <span><i class="fas fa-check-circle"></i> MBBS (Dhaka)</span>
+            <span><i class="fas fa-check-circle"></i> MD Cardiology</span>
+            <span><i class="fas fa-check-circle"></i> FCPS (Medicine)</span>
+          </div>
+          <div class="hero-btns">
+            <a href="#appointment" class="btn-primary">
+              <i class="fas fa-calendar-plus"></i> Book Appointment
+            </a>
+            <a href="#about" class="btn-outline">
+              <i class="fas fa-user-md"></i> Learn More
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap" data-aos="fade-left">
+          <div class="hero-img-bg"></div>
+          <div class="hero-img-container">
+            <div class="doctor-avatar">
+              <i class="fas fa-user-md"></i>
+            </div>
+          </div>
+          <div class="hero-stat-card card-1">
+            <div class="stat-icon"><i class="fas fa-users"></i></div>
+            <div class="stat-info">
+              <span class="stat-num" data-count="8500">0</span><span>+</span>
+              <p>Patients Treated</p>
+            </div>
+          </div>
+          <div class="hero-stat-card card-2">
+            <div class="stat-icon"><i class="fas fa-award"></i></div>
+            <div class="stat-info">
+              <span class="stat-num" data-count="15">0</span><span>+</span>
+              <p>Years Experience</p>
+            </div>
+          </div>
+          <div class="hero-stat-card card-3">
+            <div class="stat-icon"><i class="fas fa-star"></i></div>
+            <div class="stat-info">
+              <span class="stat-num-dec">4.9</span><span>/5</span>
+              <p>Patient Rating</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <a href="#about">
+        <span>Scroll Down</span>
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== STATS STRIP ========== -->
+  <section class="stats-strip">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <i class="fas fa-heartbeat"></i>
+          <div>
+            <span class="counter" data-count="8500">0</span><strong>+</strong>
+            <p>Patients Treated</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-procedures"></i>
+          <div>
+            <span class="counter" data-count="1200">0</span><strong>+</strong>
+            <p>Surgeries Performed</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-calendar-alt"></i>
+          <div>
+            <span class="counter" data-count="15">0</span><strong>+</strong>
+            <p>Years of Experience</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-medal"></i>
+          <div>
+            <span class="counter" data-count="12">0</span><strong>+</strong>
+            <p>Awards & Recognitions</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-microscope"></i>
+          <div>
+            <span class="counter" data-count="30">0</span><strong>+</strong>
+            <p>Research Publications</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-image-wrap" data-aos="fade-right">
+          <div class="about-img-bg-shape"></div>
+          <div class="about-img-box">
+            <div class="about-avatar">
+              <i class="fas fa-user-md"></i>
+            </div>
+            <div class="about-exp-badge">
+              <span>15+</span>
+              <p>Years of<br/>Excellence</p>
+            </div>
+          </div>
+          <div class="about-certifications">
+            <div class="cert-badge"><i class="fas fa-certificate"></i> FCPS Certified</div>
+            <div class="cert-badge"><i class="fas fa-star"></i> Top Cardiologist</div>
+          </div>
+        </div>
+
+        <div class="about-content" data-aos="fade-left">
+          <div class="section-label">About The Doctor</div>
+          <h2 class="section-title">Meet Dr. <em>Mehidi Hasan</em></h2>
+          <p class="about-subtitle">MBBS (Dhaka) | MD (Cardiology) | FCPS (Medicine)</p>
+          <p class="about-text">
+            Dr. Mehidi Hasan is a highly distinguished Cardiologist and Internal Medicine Specialist with over 15 years of clinical experience. He completed his MBBS from Dhaka Medical College and pursued advanced training in Cardiology both at home and abroad.
+          </p>
+          <p class="about-text">
+            Known for his patient-first philosophy, Dr. Hasan has treated thousands of cardiac patients, performed complex interventional procedures, and contributed significantly to cardiovascular research in Bangladesh.
+          </p>
+
+          <div class="about-skills">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Interventional Cardiology</span><span>95%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Echocardiography</span><span>90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Internal Medicine</span><span>88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Cardiac Research</span><span>85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="#appointment" class="btn-primary"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+            <a href="#" class="btn-text"><i class="fas fa-download"></i> Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SPECIALTIES ========== -->
+  <section class="specialties section-pad bg-light" id="specialties">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label">Medical Specialties</div>
+        <h2 class="section-title">Areas of <em>Expertise</em></h2>
+        <p class="section-desc">Comprehensive cardiac and internal medicine care with cutting-edge diagnostic and treatment modalities.</p>
+      </div>
+
+      <div class="specialties-grid">
+        <div class="specialty-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="sp-icon-wrap">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <h3>Interventional Cardiology</h3>
+          <p>Advanced cardiac catheterization, coronary angioplasty, stenting, and complex PCI procedures.</p>
+          <a href="#" class="sp-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="specialty-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="sp-icon-wrap">
+            <i class="fas fa-wave-square"></i>
+          </div>
+          <h3>Echocardiography</h3>
+          <p>Comprehensive cardiac imaging including 2D, 3D echo, stress echo, and TEE procedures.</p>
+          <a href="#" class="sp-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="specialty-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="sp-icon-wrap">
+            <i class="fas fa-lungs-virus"></i>
+          </div>
+          <h3>Heart Failure Management</h3>
+          <p>Specialized care for acute and chronic heart failure with advanced device therapy options.</p>
+          <a href="#" class="sp-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="specialty-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="sp-icon-wrap">
+            <i class="fas fa-stethoscope"></i>
+          </div>
+          <h3>Internal Medicine</h3>
+          <p>Comprehensive diagnosis and treatment of complex internal medicine conditions and diseases.</p>
+          <a href="#" class="sp-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="specialty-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="sp-icon-wrap">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Hypertension & Stroke</h3>
+          <p>Expert management of hypertension, stroke prevention, and cardiovascular risk reduction.</p>
+          <a href="#" class="sp-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="specialty-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="sp-icon-wrap">
+            <i class="fas fa-pills"></i>
+          </div>
+          <h3>Preventive Cardiology</h3>
+          <p>Holistic cardiac health programs, lifestyle modification, and preventive care strategies.</p>
+          <a href="#" class="sp-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services section-pad" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-title">Clinical <em>Services</em></h2>
+        <p class="section-desc">State-of-the-art diagnostic and treatment services delivered with precision and care.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-heart"></i>
+          <span>ECG & Holter Monitoring</span>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="130">
+          <i class="fas fa-x-ray"></i>
+          <span>Cardiac CT Angiography</span>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="160">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Stress Testing</span>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="190">
+          <i class="fas fa-microscope"></i>
+          <span>Cardiac Biomarkers</span>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="220">
+          <i class="fas fa-procedures"></i>
+          <span>Coronary Angioplasty</span>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="250">
+          <i class="fas fa-syringe"></i>
+          <span>Pacemaker Implantation</span>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="280">
+          <i class="fas fa-clipboard-list"></i>
+          <span>Preventive Checkups</span>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-delay="310">
+          <i class="fas fa-video"></i>
+          <span>Online Consultation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE / TIMELINE ========== -->
+  <section class="experience section-pad bg-light" id="experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label">Career Journey</div>
+        <h2 class="section-title">Education & <em>Experience</em></h2>
+      </div>
+
+      <div class="timeline-tabs">
+        <button class="tab-btn active" data-tab="education">
+          <i class="fas fa-graduation-cap"></i> Education
+        </button>
+        <button class="tab-btn" data-tab="work">
+          <i class="fas fa-briefcase-medical"></i> Work Experience
+        </button>
+        <button class="tab-btn" data-tab="awards">
+          <i class="fas fa-trophy"></i> Awards
+        </button>
+      </div>
+
+      <div class="timeline-content" id="educationTab">
+        <div class="timeline">
+          <div class="tl-item" data-aos="fade-right">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2006 – 2012</div>
+            <div class="tl-card">
+              <h4>MBBS</h4>
+              <p>Dhaka Medical College, University of Dhaka</p>
+              <span class="tl-badge">Graduated with Honors</span>
+            </div>
+          </div>
+          <div class="tl-item" data-aos="fade-left">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2013 – 2015</div>
+            <div class="tl-card">
+              <h4>MD – Cardiology</h4>
+              <p>Bangabandhu Sheikh Mujib Medical University (BSMMU)</p>
+              <span class="tl-badge">Merit Position</span>
+            </div>
+          </div>
+          <div class="tl-item" data-aos="fade-right">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2016 – 2018</div>
+            <div class="tl-card">
+              <h4>FCPS – Medicine</h4>
+              <p>Bangladesh College of Physicians and Surgeons (BCPS)</p>
+              <span class="tl-badge">Fellowship</span>
+            </div>
+          </div>
+          <div class="tl-item" data-aos="fade-left">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2019</div>
+            <div class="tl-card">
+              <h4>Advanced Interventional Cardiology Training</h4>
+              <p>National Heart Institute, New Delhi, India</p>
+              <span class="tl-badge">International Training</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-content hidden" id="workTab">
+        <div class="timeline">
+          <div class="tl-item" data-aos="fade-right">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2020 – Present</div>
+            <div class="tl-card">
+              <h4>Senior Consultant Cardiologist</h4>
+              <p>Square Hospital Ltd., Dhaka, Bangladesh</p>
+              <span class="tl-badge">Current Position</span>
+            </div>
+          </div>
+          <div class="tl-item" data-aos="fade-left">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2017 – 2020</div>
+            <div class="tl-card">
+              <h4>Associate Consultant</h4>
+              <p>National Heart Foundation Hospital & Research Institute</p>
+              <span class="tl-badge">3 Years</span>
+            </div>
+          </div>
+          <div class="tl-item" data-aos="fade-right">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2014 – 2017</div>
+            <div class="tl-card">
+              <h4>Medical Officer – Cardiology</h4>
+              <p>Dhaka Medical College Hospital</p>
+              <span class="tl-badge">3 Years</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-content hidden" id="awardsTab">
+        <div class="awards-grid">
+          <div class="award-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="award-icon"><i class="fas fa-trophy"></i></div>
+            <h4>Best Cardiologist Award</h4>
+            <p>Bangladesh Medical Association, 2023</p>
+          </div>
+          <div class="award-card" data-aos="zoom-in" data-aos-delay="150">
+            <div class="award-icon"><i class="fas fa-medal"></i></div>
+            <h4>Excellence in Research</h4>
+            <p>BSMMU Research Foundation, 2022</p>
+          </div>
+          <div class="award-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="award-icon"><i class="fas fa-star"></i></div>
+            <h4>Outstanding Physician</h4>
+            <p>Healthcare Leadership Summit, 2021</p>
+          </div>
+          <div class="award-card" data-aos="zoom-in" data-aos-delay="250">
+            <div class="award-icon"><i class="fas fa-certificate"></i></div>
+            <h4>Young Achiever Award</h4>
+            <p>South Asian Cardiac Society, 2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="gallery section-pad" id="gallery">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label">Photo Gallery</div>
+        <h2 class="section-title">Clinical <em>Gallery</em></h2>
+        <p class="section-desc">Glimpses of our state-of-the-art facilities and clinical work.</p>
+      </div>
+
+      <div class="gallery-filter" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="clinic">Clinic</button>
+        <button class="filter-btn" data-filter="procedure">Procedures</button>
+        <button class="filter-btn" data-filter="awards">Awards</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="clinic" data-aos="zoom-in" data-aos-delay="50">
+          <div class="gallery-img clinic-1">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">Consultation Room</div>
+        </div>
+        <div class="gallery-item" data-category="procedure" data-aos="zoom-in" data-aos-delay="100">
+          <div class="gallery-img procedure-1">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">Cath Lab Procedure</div>
+        </div>
+        <div class="gallery-item" data-category="clinic" data-aos="zoom-in" data-aos-delay="150">
+          <div class="gallery-img clinic-2">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">Patient Consultation</div>
+        </div>
+        <div class="gallery-item" data-category="awards" data-aos="zoom-in" data-aos-delay="200">
+          <div class="gallery-img awards-1">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">BMA Award 2023</div>
+        </div>
+        <div class="gallery-item" data-category="procedure" data-aos="zoom-in" data-aos-delay="250">
+          <div class="gallery-img procedure-2">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">Echo Procedure</div>
+        </div>
+        <div class="gallery-item" data-category="awards" data-aos="zoom-in" data-aos-delay="300">
+          <div class="gallery-img awards-2">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-caption">Medical Conference</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials section-pad bg-dark-blue" id="testimonials">
+    <div class="container">
+      <div class="section-header light" data-aos="fade-up">
+        <div class="section-label">Patient Reviews</div>
+        <h2 class="section-title">What Patients <em>Say</em></h2>
+      </div>
+
+      <div class="testimonials-slider" data-aos="fade-up">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Dr. Mehidi Hasan is an exceptional cardiologist. His thorough examination, clear explanation of my condition, and the excellent treatment plan made me feel confident and cared for. My heart health has improved dramatically."</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><i class="fas fa-user"></i></div>
+              <div>
+                <strong>Rahim Uddin</strong>
+                <span>Cardiac Patient, Dhaka</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"I had been suffering from heart issues for years. Dr. Hasan's expertise and compassionate approach changed my life. The coronary angioplasty he performed was successful and I am now living a healthier life."</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><i class="fas fa-user"></i></div>
+              <div>
+                <strong>Nasreen Akter</strong>
+                <span>Angioplasty Patient, Chittagong</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="testi-text">"A truly dedicated physician. Dr. Hasan took time to listen to all my concerns, explained every aspect of my treatment in simple language, and his follow-up care is excellent. Highly recommended!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><i class="fas fa-user"></i></div>
+              <div>
+                <strong>Karim Sheikh</strong>
+                <span>Heart Failure Patient, Sylhet</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testi-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Best cardiologist in Bangladesh! Dr. Hasan's skills and knowledge are unmatched. He identified my condition when other doctors couldn't. His precision and care during the procedure was remarkable."</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><i class="fas fa-user"></i></div>
+              <div>
+                <strong>Farida Begum</strong>
+                <span>Hypertension Patient, Rajshahi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== APPOINTMENT ========== -->
+  <section class="appointment section-pad" id="appointment">
+    <div class="container">
+      <div class="appointment-inner">
+        <div class="appoint-info" data-aos="fade-right">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-title">Book an <em>Appointment</em></h2>
+          <p>Schedule your consultation with Dr. Mehidi Hasan today. We are here to provide you with the highest standard of cardiac care.</p>
+
+          <div class="appoint-schedule">
+            <h4><i class="fas fa-clock"></i> Chamber Schedule</h4>
+            <div class="schedule-list">
+              <div class="schedule-item">
+                <span class="day">Saturday – Thursday</span>
+                <span class="time">10:00 AM – 2:00 PM</span>
+              </div>
+              <div class="schedule-item">
+                <span class="day">Saturday – Thursday</span>
+                <span class="time">5:00 PM – 9:00 PM</span>
+              </div>
+              <div class="schedule-item closed">
+                <span class="day">Friday</span>
+                <span class="time">Closed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="appoint-contact">
+            <a href="tel:+8801712345678" class="contact-chip">
+              <i class="fas fa-phone-alt"></i>
+              <div><small>Call Now</small><strong>+880 1712-345678</strong></div>
+            </a>
+            <a href="https://wa.me/8801712345678" class="contact-chip whatsapp">
+              <i class="fab fa-whatsapp"></i>
+              <div><small>WhatsApp</small><strong>Chat with Us</strong></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="appoint-form-wrap" data-aos="fade-left">
+          <form class="appoint-form" id="appointmentForm">
+            <h3><i class="fas fa-calendar-plus"></i> Request Appointment</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label><i class="fas fa-user"></i> Full Name *</label>
+                <input type="text" placeholder="Your Full Name" required />
+              </div>
+              <div class="form-group">
+                <label><i class="fas fa-phone"></i> Phone Number *</label>
+                <input type="tel" placeholder="+880 XXXXXXXXXX" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label><i class="fas fa-envelope"></i> Email Address</label>
+                <input type="email" placeholder="your@email.com" />
+              </div>
+              <div class="form-group">
+                <label><i class="fas fa-calendar"></i> Preferred Date *</label>
+                <input type="date" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label><i class="fas fa-clock"></i> Preferred Time *</label>
+                <select required>
+                  <option value="">Select Time Slot</option>
+                  <option>10:00 AM – 11:00 AM</option>
+                  <option>11:00 AM – 12:00 PM</option>
+                  <option>12:00 PM – 1:00 PM</option>
+                  <option>5:00 PM – 6:00 PM</option>
+                  <option>6:00 PM – 7:00 PM</option>
+                  <option>7:00 PM – 8:00 PM</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label><i class="fas fa-stethoscope"></i> Reason for Visit</label>
+                <select>
+                  <option value="">Select Reason</option>
+                  <option>Chest Pain</option>
+                  <option>Heart Checkup</option>
+                  <option>Hypertension</option>
+                  <option>Follow-up Visit</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group full">
+              <label><i class="fas fa-comment-medical"></i> Additional Message</label>
+              <textarea placeholder="Describe your symptoms or any additional information..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <i class="fas fa-paper-plane"></i> Submit Appointment Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section-pad bg-light" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label">Find Us</div>
+        <h2 class="section-title">Contact <em>Information</em></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="cc-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h4>Chamber Address</h4>
+          <p>Square Hospital Ltd.<br/>18/F, Bir Uttam Qazi Nuruzzaman Sarak<br/>West Panthapath, Dhaka-1205</p>
+        </div>
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="cc-icon"><i class="fas fa-phone-alt"></i></div>
+          <h4>Phone & Emergency</h4>
+          <p>Appointment: +880 1712-345678<br/>Emergency: +880 10616-717171<br/>Hospital: +880 2-8159457</p>
+        </div>
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+          <h4>Email</h4>
+          <p>dr.mehidi@example.com<br/>appointments@example.com</p>
+        </div>
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="cc-icon"><i class="fas fa-clock"></i></div>
+          <h4>Consultation Hours</h4>
+          <p>Sat – Thu: 10 AM – 2 PM<br/>Sat – Thu: 5 PM – 9 PM<br/>Friday: Closed</p>
+        </div>
+      </div>
+
+      <div class="map-container" data-aos="fade-up">
+        <div class="map-placeholder">
+          <i class="fas fa-map-marked-alt"></i>
+          <p>Square Hospital, West Panthapath, Dhaka</p>
+          <a href="https://maps.google.com" target="_blank" class="btn-primary">
+            <i class="fas fa-directions"></i> Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <a href="#" class="footer-logo">
+              <i class="fas fa-stethoscope"></i>
+              <div>
+                <span>Dr. Mehidi Hasan</span>
+                <small>MBBS, MD, FCPS</small>
+              </div>
+            </a>
+            <p>Committed to excellence in cardiac care and patient well-being. Providing compassionate, evidence-based treatment for over 15 years.</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+              <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+              <li><a href="#specialties"><i class="fas fa-chevron-right"></i> Specialties</a></li>
+              <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+              <li><a href="#experience"><i class="fas fa-chevron-right"></i> Experience</a></li>
+              <li><a href="#appointment"><i class="fas fa-chevron-right"></i> Book Appointment</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-services">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Interventional Cardiology</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Echocardiography</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Heart Failure Care</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Hypertension Mgmt.</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Preventive Cardiology</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i> Online Consultation</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i> Square Hospital, West Panthapath, Dhaka-1205</li>
+              <li><i class="fas fa-phone-alt"></i> +880 1712-345678</li>
+              <li><i class="fas fa-envelope"></i> dr.mehidi@example.com</li>
+              <li><i class="fas fa-clock"></i> Sat – Thu: 10 AM – 2 PM & 5 – 9 PM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Dr. Mehidi Hasan. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> for Healthcare</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-box">
+      <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
+      <h3>Appointment Requested!</h3>
+      <p>Your appointment request has been submitted successfully. We will contact you within 24 hours to confirm your booking.</p>
+      <button class="btn-primary" id="modalClose">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
