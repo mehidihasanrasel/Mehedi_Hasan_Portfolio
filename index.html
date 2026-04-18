@@ -3,850 +3,588 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Mehidi Hasan | Cardiologist & Internal Medicine Specialist</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>ExcelPro — Data & Automation Specialist</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,400;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ========== PRELOADER ========== -->
-  <div class="preloader" id="preloader">
-    <div class="preloader-inner">
-      <div class="pulse-ring"></div>
-      <div class="pulse-ring delay"></div>
-      <i class="fas fa-heartbeat preloader-icon"></i>
+<!-- ───── CURSOR ───── -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursor-follower"></div>
+
+<!-- ───── NAV ───── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#home"><span>https://www.logoai.com/logo/6920857</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-hire">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ───── HERO ───── -->
+<section id="home" class="hero">
+  <div class="hero-bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+  <div class="hero-grid-lines"></div>
+
+  <div class="hero-inner">
+    <!-- LEFT -->
+    <div class="hero-text" data-aos>
+      <div class="hero-chip">
+        <span class="chip-dot"></span>
+        Available for Work · Bangladesh
+      </div>
+      <h1 class="hero-heading">
+        Hi, I'm <br>
+        <span class="hero-name gradient-text">Your Name</span>
+      </h1>
+      <div class="hero-typewriter">
+        <span id="typed-text"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        I craft powerful Excel & Google Sheets solutions — from automated dashboards 
+        to data-driven reports — that help businesses save hours every week.
+      </p>
+
+      <div class="hero-stats">
+        <div class="hstat">
+          <strong class="counter" data-target="120">0</strong><span>+</span>
+          <small>Projects Done</small>
+        </div>
+        <div class="hstat-divider"></div>
+        <div class="hstat">
+          <strong class="counter" data-target="85">0</strong><span>+</span>
+          <small>Happy Clients</small>
+        </div>
+        <div class="hstat-divider"></div>
+        <div class="hstat">
+          <strong class="counter" data-target="4">0</strong><span>+</span>
+          <small>Years Exp.</small>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="https://canva.link/u77bagjlbwd2rf0" class="btn-secondary" target="_blank">Download CV
+        </a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="#" class="social-link" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" class="social-link" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        </a>
+        <a href="#" class="social-link" title="Fiverr">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.25 16.25v-7.5h-3.458v-.875c0-.896.458-1.375 1.25-1.375h2.208V3.042h-2.791C10.791 3.042 9.208 4.75 9.208 7.417v1.333H7.042v3.542h2.166v4.375h-2.5V20h9.042v-3.75z"/></svg>
+        </a>
+        <a href="#" class="social-link" title="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.535 5.846L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.992 0-3.866-.55-5.468-1.508l-.394-.237-4.079 1.064 1.09-3.978-.259-.412A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: PHOTO -->
+    <div class="hero-photo-wrap" data-aos data-aos-delay="200">
+      <div class="photo-ring photo-ring-1"></div>
+      <div class="photo-ring photo-ring-2"></div>
+      <div class="photo-blob"></div>
+      <div class="photo-frame">
+        <img src="Rasel.jpg" alt="Rasel Profile Photo">
+      </div>
+      <div class="photo-badge badge-excel">
+        <span>📊</span> Excel Expert
+      </div>
+      <div class="photo-badge badge-data">
+        <span>📈</span> Data Analyst
+      </div>
+      <div class="photo-badge badge-auto">
+        <span>⚡</span> Automation
+      </div>
     </div>
   </div>
 
-  <!-- ========== HEADER / NAVBAR ========== -->
-  <header class="header" id="header">
-    <div class="header-top">
-      <div class="container">
-        <div class="header-top-inner">
-          <div class="header-contacts">
-            <a href="tel:+8801712345678"><i class="fas fa-phone-alt"></i> +880 1712-345678</a>
-            <a href="mailto:dr.mehidi@example.com"><i class="fas fa-envelope"></i> dr.mehidi@example.com</a>
-            <span><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</span>
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll down</span>
+  </div>
+</section>
+
+<!-- ───── MARQUEE ───── -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>Excel Automation</span><span class="dot">✦</span>
+    <span>Google Sheets</span><span class="dot">✦</span>
+    <span>Data Analysis</span><span class="dot">✦</span>
+    <span>VBA Macros</span><span class="dot">✦</span>
+    <span>Dashboard Design</span><span class="dot">✦</span>
+    <span>Power Query</span><span class="dot">✦</span>
+    <span>Pivot Tables</span><span class="dot">✦</span>
+    <span>Excel Automation</span><span class="dot">✦</span>
+    <span>Google Sheets</span><span class="dot">✦</span>
+    <span>Data Analysis</span><span class="dot">✦</span>
+    <span>VBA Macros</span><span class="dot">✦</span>
+    <span>Dashboard Design</span><span class="dot">✦</span>
+    <span>Power Query</span><span class="dot">✦</span>
+    <span>Pivot Tables</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- ───── ABOUT ───── -->
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual" data-aos>
+        <div class="about-img-bg"></div>
+        <div class="about-cards-stack">
+          <div class="acard acard-1">
+            <div class="acard-icon">🏆</div>
+            <div>
+              <strong>Top Rated</strong>
+              <small>Fiverr Seller</small>
+            </div>
           </div>
-          <div class="header-social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+          <div class="acard acard-2">
+            <div class="acard-icon">⭐</div>
+            <div>
+              <strong>5.0 Rating</strong>
+              <small>85 Reviews</small>
+            </div>
+          </div>
+          <div class="acard acard-3">
+            <div class="acard-icon">⚡</div>
+            <div>
+              <strong>24hr Delivery</strong>
+              <small>Fast Turnaround</small>
+            </div>
+          </div>
+        </div>
+        <div class="about-circle-decor"></div>
+      </div>
+      <div class="about-content" data-aos data-aos-delay="150">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-heading">Turning Raw Data Into <span class="gradient-text">Powerful Insights</span></h2>
+        <p>I'm a dedicated Excel & Google Sheets specialist based in Bangladesh. I transform complex, messy data into clean, automated, and visually compelling spreadsheet solutions — saving businesses hours of manual work every week.</p>
+        <p>With over 4 years of experience, I've helped 85+ clients across e-commerce, HR, finance, and marketing streamline their data workflows.</p>
+
+        <div class="about-highlights">
+          <div class="ahl"><div class="ahl-dot"></div>Custom formula-driven dashboards</div>
+          <div class="ahl"><div class="ahl-dot"></div>VBA macros & process automation</div>
+          <div class="ahl"><div class="ahl-dot"></div>Power Query data transformation</div>
+          <div class="ahl"><div class="ahl-dot"></div>Advanced charts & visualizations</div>
+        </div>
+
+        <div class="about-btns">
+          <a href="#contact" class="btn-primary">Let's Talk <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="#projects" class="btn-ghost">See Projects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── SKILLS ───── -->
+<section id="skills" class="section skills-section">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-tag">What I Do</div>
+      <h2 class="section-heading">Skills & <span class="gradient-text">Expertise</span></h2>
+      <p class="section-sub">Tools and techniques I use to deliver top-quality spreadsheet solutions</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card" data-aos data-aos-delay="0">
+        <div class="skill-icon-wrap" style="--c:#10b981">📊</div>
+        <h3>Excel & Sheets</h3>
+        <p>Advanced formulas, VLOOKUP, XLOOKUP, INDEX-MATCH, array formulas and complex nested logic</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" style="--w:95%;--c:#10b981"></div>
+        </div>
+        <span class="skill-pct">95%</span>
+      </div>
+      <div class="skill-card" data-aos data-aos-delay="80">
+        <div class="skill-icon-wrap" style="--c:#6366f1">⚡</div>
+        <h3>VBA Macros</h3>
+        <p>Custom macros to automate repetitive tasks, generate reports, and build interactive tools</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" style="--w:88%;--c:#6366f1"></div>
+        </div>
+        <span class="skill-pct">88%</span>
+      </div>
+      <div class="skill-card" data-aos data-aos-delay="160">
+        <div class="skill-icon-wrap" style="--c:#f59e0b">🔄</div>
+        <h3>Power Query</h3>
+        <p>Clean, merge and transform large datasets from multiple sources with automated refresh</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" style="--w:85%;--c:#f59e0b"></div>
+        </div>
+        <span class="skill-pct">85%</span>
+      </div>
+      <div class="skill-card" data-aos data-aos-delay="240">
+        <div class="skill-icon-wrap" style="--c:#ec4899">📈</div>
+        <h3>Dashboard Design</h3>
+        <p>Interactive, dynamic dashboards with slicers, charts, and conditional formatting</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" style="--w:92%;--c:#ec4899"></div>
+        </div>
+        <span class="skill-pct">92%</span>
+      </div>
+      <div class="skill-card" data-aos data-aos-delay="320">
+        <div class="skill-icon-wrap" style="--c:#0ea5e9">📋</div>
+        <h3>Data Analysis</h3>
+        <p>Pivot tables, statistical analysis, trend analysis and meaningful data storytelling</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" style="--w:90%;--c:#0ea5e9"></div>
+        </div>
+        <span class="skill-pct">90%</span>
+      </div>
+      <div class="skill-card" data-aos data-aos-delay="400">
+        <div class="skill-icon-wrap" style="--c:#8b5cf6">🤖</div>
+        <h3>Automation</h3>
+        <p>Automated invoicing, payroll, attendance tracking and scheduled report generation</p>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar" style="--w:87%;--c:#8b5cf6"></div>
+        </div>
+        <span class="skill-pct">87%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── PROJECTS ───── -->
+<section id="projects" class="section projects-section">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-tag">My Work</div>
+      <h2 class="section-heading">Featured <span class="gradient-text">Projects</span></h2>
+      <p class="section-sub">Real spreadsheet solutions built for real businesses</p>
+    </div>
+
+    <div class="proj-filter" data-aos>
+      <button class="pf-btn active" data-filter="all">All</button>
+      <button class="pf-btn" data-filter="dashboard">Dashboard</button>
+      <button class="pf-btn" data-filter="automation">Automation</button>
+      <button class="pf-btn" data-filter="analysis">Analysis</button>
+    </div>
+
+    <div class="proj-grid">
+      <div class="proj-card" data-category="dashboard" data-aos data-aos-delay="0">
+        <div class="proj-thumb" style="--bg:linear-gradient(135deg,#0f172a,#1e3a5f)">
+          <div class="proj-mock">
+            <div class="pm-bar" style="--h:60%;--c:#10b981"></div>
+            <div class="pm-bar" style="--h:80%;--c:#6366f1"></div>
+            <div class="pm-bar" style="--h:45%;--c:#f59e0b"></div>
+            <div class="pm-bar" style="--h:90%;--c:#10b981"></div>
+            <div class="pm-bar" style="--h:70%;--c:#ec4899"></div>
+          </div>
+          <div class="proj-overlay">
+            <a href="#" class="proj-preview-btn">Live Preview</a>
+            <a href="#" class="proj-dl-btn">⬇ Download</a>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cat">Dashboard</div>
+          <h3>Sales Analytics Dashboard</h3>
+          <p>Dynamic multi-sheet dashboard with real-time KPIs, regional breakdowns, and interactive charts</p>
+          <div class="proj-tags">
+            <span>Excel</span><span>Pivot Tables</span><span>Charts</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-category="automation" data-aos data-aos-delay="100">
+        <div class="proj-thumb" style="--bg:linear-gradient(135deg,#1a0533,#4c1d95)">
+          <div class="proj-mock">
+            <div style="display:flex;flex-direction:column;gap:6px;width:80%">
+              <div style="height:10px;background:rgba(139,92,246,0.8);border-radius:3px;width:90%"></div>
+              <div style="height:10px;background:rgba(139,92,246,0.5);border-radius:3px;width:70%"></div>
+              <div style="height:10px;background:rgba(139,92,246,0.6);border-radius:3px;width:80%"></div>
+              <div style="height:10px;background:rgba(139,92,246,0.4);border-radius:3px;width:60%"></div>
+              <div style="height:10px;background:rgba(139,92,246,0.7);border-radius:3px;width:85%"></div>
+            </div>
+          </div>
+          <div class="proj-overlay">
+            <a href="#" class="proj-preview-btn">Live Preview</a>
+            <a href="#" class="proj-dl-btn">⬇ Download</a>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cat">Automation</div>
+          <h3>HR Payroll Automation</h3>
+          <p>Full attendance + salary automation with VBA macros — auto calculates leaves, OT, and deductions</p>
+          <div class="proj-tags">
+            <span>VBA</span><span>Automation</span><span>HR</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-category="analysis" data-aos data-aos-delay="200">
+        <div class="proj-thumb" style="--bg:linear-gradient(135deg,#052e16,#166534)">
+          <svg viewBox="0 0 100 100" style="width:80px;height:80px">
+            <circle cx="50" cy="50" r="38" fill="none" stroke="rgba(16,185,129,0.3)" stroke-width="16"/>
+            <circle cx="50" cy="50" r="38" fill="none" stroke="#10b981" stroke-width="16" stroke-dasharray="80 159" stroke-dashoffset="0" transform="rotate(-90 50 50)"/>
+            <circle cx="50" cy="50" r="38" fill="none" stroke="#6ee7b7" stroke-width="16" stroke-dasharray="50 189" stroke-dashoffset="-80" transform="rotate(-90 50 50)"/>
+            <circle cx="50" cy="50" r="38" fill="none" stroke="#34d399" stroke-width="16" stroke-dasharray="29 219" stroke-dashoffset="-130" transform="rotate(-90 50 50)"/>
+          </svg>
+          <div class="proj-overlay">
+            <a href="#" class="proj-preview-btn">Live Preview</a>
+            <a href="#" class="proj-dl-btn">⬇ Download</a>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cat">Analysis</div>
+          <h3>Expense Budget Tracker</h3>
+          <p>Category-wise budget tracker with donut charts, monthly trend lines and variance alerts</p>
+          <div class="proj-tags">
+            <span>Power Query</span><span>Charts</span><span>Finance</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-category="dashboard" data-aos data-aos-delay="300">
+        <div class="proj-thumb" style="--bg:linear-gradient(135deg,#1c1917,#44403c)">
+          <div class="proj-mock">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;width:80%">
+              <div style="height:30px;background:rgba(245,158,11,0.7);border-radius:4px"></div>
+              <div style="height:30px;background:rgba(245,158,11,0.4);border-radius:4px"></div>
+              <div style="height:30px;background:rgba(245,158,11,0.4);border-radius:4px"></div>
+              <div style="height:30px;background:rgba(245,158,11,0.7);border-radius:4px"></div>
+              <div style="grid-column:span 2;height:15px;background:rgba(245,158,11,0.3);border-radius:4px"></div>
+            </div>
+          </div>
+          <div class="proj-overlay">
+            <a href="#" class="proj-preview-btn">Live Preview</a>
+            <a href="#" class="proj-dl-btn">⬇ Download</a>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cat">Dashboard</div>
+          <h3>Inventory Management</h3>
+          <p>Real-time stock tracker with low-stock alerts, supplier tracking and reorder automation</p>
+          <div class="proj-tags">
+            <span>Excel</span><span>VBA</span><span>Inventory</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-category="automation" data-aos data-aos-delay="400">
+        <div class="proj-thumb" style="--bg:linear-gradient(135deg,#0c1445,#1e40af)">
+          <div class="proj-mock">
+            <div style="display:flex;align-items:center;gap:8px;width:80%">
+              <div style="flex:1">
+                <div style="height:8px;background:#60a5fa;border-radius:2px;margin-bottom:5px"></div>
+                <div style="height:8px;background:rgba(96,165,250,0.5);border-radius:2px;margin-bottom:5px"></div>
+                <div style="height:8px;background:rgba(96,165,250,0.7);border-radius:2px"></div>
+              </div>
+              <svg width="40" height="40" viewBox="0 0 40 40">
+                <circle cx="20" cy="20" r="16" fill="none" stroke="rgba(96,165,250,0.3)" stroke-width="6"/>
+                <circle cx="20" cy="20" r="16" fill="none" stroke="#60a5fa" stroke-width="6" stroke-dasharray="60 101" transform="rotate(-90 20 20)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="proj-overlay">
+            <a href="#" class="proj-preview-btn">Live Preview</a>
+            <a href="#" class="proj-dl-btn">⬇ Download</a>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cat">Automation</div>
+          <h3>Invoice Generator</h3>
+          <p>Auto-fill invoice system with client database, PDF export and email automation via VBA</p>
+          <div class="proj-tags">
+            <span>VBA</span><span>PDF</span><span>Invoicing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-category="analysis" data-aos data-aos-delay="500">
+        <div class="proj-thumb" style="--bg:linear-gradient(135deg,#1f0219,#701a75)">
+          <div class="proj-mock" style="display:flex;flex-direction:column;align-items:flex-start;gap:5px;width:80%">
+            <div style="display:flex;align-items:center;gap:5px;width:100%">
+              <div style="width:12px;height:12px;border-radius:50%;background:#e879f9"></div>
+              <div style="flex:1;height:6px;background:rgba(232,121,249,0.7);border-radius:2px"></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:5px;width:100%">
+              <div style="width:12px;height:12px;border-radius:50%;background:rgba(232,121,249,0.5)"></div>
+              <div style="flex:0.7;height:6px;background:rgba(232,121,249,0.5);border-radius:2px"></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:5px;width:100%">
+              <div style="width:12px;height:12px;border-radius:50%;background:rgba(232,121,249,0.7)"></div>
+              <div style="flex:0.85;height:6px;background:rgba(232,121,249,0.6);border-radius:2px"></div>
+            </div>
+          </div>
+          <div class="proj-overlay">
+            <a href="#" class="proj-preview-btn">Live Preview</a>
+            <a href="#" class="proj-dl-btn">⬇ Download</a>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-cat">Analysis</div>
+          <h3>Survey Data Analyzer</h3>
+          <p>Automated survey results processing with sentiment scoring, charts and executive summary</p>
+          <div class="proj-tags">
+            <span>Power Query</span><span>Analysis</span><span>Reporting</span>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <nav class="navbar" id="navbar">
-      <div class="container">
-        <div class="nav-inner">
-          <a href="#home" class="logo">
-            <span class="logo-icon"><i class="fas fa-stethoscope"></i></span>
-            <div class="logo-text">
-              <span class="logo-name">Dr. Mehidi Hasan</span>
-              <span class="logo-title">MBBS, MD, FCPS</span>
+<!-- ───── TESTIMONIALS ───── -->
+<section class="section testimonials-section">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <div class="section-tag">Reviews</div>
+      <h2 class="section-heading">What Clients <span class="gradient-text">Say</span></h2>
+    </div>
+    <div class="testi-slider" id="testiSlider">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Absolutely amazing work! The dashboard he built transformed how our team tracks sales. Exceeded all expectations and delivered ahead of schedule."</p>
+          <div class="testi-author">
+            <div class="ta-avatar" style="--c:#10b981">JM</div>
+            <div><strong>James Mitchell</strong><small>E-commerce Director, UK</small></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"The payroll automation system saved us 20+ hours per month. The VBA macros work flawlessly. Will definitely hire again for our next project."</p>
+          <div class="testi-author">
+            <div class="ta-avatar" style="--c:#6366f1">SR</div>
+            <div><strong>Sarah Rahman</strong><small>HR Manager, Canada</small></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Professional, responsive and very knowledgeable. Delivered a complex inventory system with zero issues. Highly recommend to anyone needing Excel solutions."</p>
+          <div class="testi-author">
+            <div class="ta-avatar" style="--c:#f59e0b">AK</div>
+            <div><strong>Ahmed Khan</strong><small>Operations Manager, UAE</small></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"I gave him a messy dataset and he returned a beautiful, automated report. The quality of work is outstanding. Best investment for my business!"</p>
+          <div class="testi-author">
+            <div class="ta-avatar" style="--c:#ec4899">LP</div>
+            <div><strong>Lisa Park</strong><small>Startup Founder, USA</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-controls">
+        <button class="tc-btn" id="tPrev">←</button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="tc-btn" id="tNext">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── CONTACT ───── -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-left" data-aos>
+        <div class="section-tag">Get in Touch</div>
+        <h2 class="section-heading">Let's Build Something <span class="gradient-text">Amazing</span></h2>
+        <p>Have a project in mind? I'd love to hear about it. Send me a message and let's create something powerful together.</p>
+
+        <div class="contact-cards">
+          <div class="cc-card">
+            <div class="cc-icon">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <span>+880 1944-717795</span>
             </div>
-          </a>
+          </div>
+          <div class="cc-card">
+            <div class="cc-icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <span>imrasel51@gmail.com</span>
+            </div>
+          </div>
+          <div class="cc-card">
+            <div class="cc-icon">💬</div>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>+880 1540-725111</span>
+            </div>
+          </div>
+          <div class="cc-card">
+            <div class="cc-icon">📍</div>
+            <div>
+              <strong>Location</strong>
+              <span>Dhaka, Bangladesh</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <ul class="nav-links" id="navLinks">
-            <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#specialties" class="nav-link">Specialties</a></li>
-            <li><a href="#services" class="nav-link">Services</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#gallery" class="nav-link">Gallery</a></li>
-            <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-          </ul>
-
-          <a href="#appointment" class="btn-appoint">
-            <i class="fas fa-calendar-check"></i> Book Appointment
-          </a>
-
-          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
+      <div class="contact-form-wrap" data-aos data-aos-delay="150">
+        <div class="cf-card">
+          <h3>Send a Message</h3>
+          <div class="cf-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="John Doe" class="cf-input" id="cf-name" />
+          </div>
+          <div class="cf-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="john@example.com" class="cf-input" id="cf-email" />
+          </div>
+          <div class="cf-group">
+            <label>Subject</label>
+            <input type="text" placeholder="Project Type" class="cf-input" id="cf-subject" />
+          </div>
+          <div class="cf-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Tell me about your project..." class="cf-input" id="cf-msg"></textarea>
+          </div>
+          <button class="btn-primary btn-full" id="sendBtn">
+            Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
           </button>
+          <div class="cf-success" id="cfSuccess">✅ Message sent! I'll reply within 24 hours.</div>
         </div>
       </div>
-    </nav>
-  </header>
-
-  <!-- ========== HERO SECTION ========== -->
-  <section class="hero" id="home">
-    <div class="hero-bg-overlay"></div>
-    <div class="hero-particles" id="particles"></div>
-
-    <div class="container">
-      <div class="hero-inner">
-        <div class="hero-content" data-aos="fade-right">
-          <div class="hero-badge">
-            <span class="badge-dot"></span>
-            Available for Consultation
-          </div>
-          <h1 class="hero-title">
-            Dr. Mehidi <em>Hasan</em>
-          </h1>
-          <p class="hero-specialty">Cardiologist & Internal Medicine Specialist</p>
-          <p class="hero-desc">
-            Providing compassionate, evidence-based cardiac care with over <strong>15 years</strong> of clinical excellence. Board-certified specialist dedicated to your heart health and overall well-being.
-          </p>
-          <div class="hero-certs">
-            <span><i class="fas fa-check-circle"></i> MBBS (Dhaka)</span>
-            <span><i class="fas fa-check-circle"></i> MD Cardiology</span>
-            <span><i class="fas fa-check-circle"></i> FCPS (Medicine)</span>
-          </div>
-          <div class="hero-btns">
-            <a href="#appointment" class="btn-primary">
-              <i class="fas fa-calendar-plus"></i> Book Appointment
-            </a>
-            <a href="#about" class="btn-outline">
-              <i class="fas fa-user-md"></i> Learn More
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-image-wrap" data-aos="fade-left">
-          <div class="hero-img-bg"></div>
-          <div class="hero-img-container">
-            <div class="doctor-avatar">
-              <i class="fas fa-user-md"></i>
-            </div>
-          </div>
-          <div class="hero-stat-card card-1">
-            <div class="stat-icon"><i class="fas fa-users"></i></div>
-            <div class="stat-info">
-              <span class="stat-num" data-count="8500">0</span><span>+</span>
-              <p>Patients Treated</p>
-            </div>
-          </div>
-          <div class="hero-stat-card card-2">
-            <div class="stat-icon"><i class="fas fa-award"></i></div>
-            <div class="stat-info">
-              <span class="stat-num" data-count="15">0</span><span>+</span>
-              <p>Years Experience</p>
-            </div>
-          </div>
-          <div class="hero-stat-card card-3">
-            <div class="stat-icon"><i class="fas fa-star"></i></div>
-            <div class="stat-info">
-              <span class="stat-num-dec">4.9</span><span>/5</span>
-              <p>Patient Rating</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-scroll">
-      <a href="#about">
-        <span>Scroll Down</span>
-        <i class="fas fa-chevron-down"></i>
-      </a>
-    </div>
-  </section>
-
-  <!-- ========== STATS STRIP ========== -->
-  <section class="stats-strip">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <i class="fas fa-heartbeat"></i>
-          <div>
-            <span class="counter" data-count="8500">0</span><strong>+</strong>
-            <p>Patients Treated</p>
-          </div>
-        </div>
-        <div class="stat-item">
-          <i class="fas fa-procedures"></i>
-          <div>
-            <span class="counter" data-count="1200">0</span><strong>+</strong>
-            <p>Surgeries Performed</p>
-          </div>
-        </div>
-        <div class="stat-item">
-          <i class="fas fa-calendar-alt"></i>
-          <div>
-            <span class="counter" data-count="15">0</span><strong>+</strong>
-            <p>Years of Experience</p>
-          </div>
-        </div>
-        <div class="stat-item">
-          <i class="fas fa-medal"></i>
-          <div>
-            <span class="counter" data-count="12">0</span><strong>+</strong>
-            <p>Awards & Recognitions</p>
-          </div>
-        </div>
-        <div class="stat-item">
-          <i class="fas fa-microscope"></i>
-          <div>
-            <span class="counter" data-count="30">0</span><strong>+</strong>
-            <p>Research Publications</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== ABOUT SECTION ========== -->
-  <section class="about section-pad" id="about">
-    <div class="container">
-      <div class="about-inner">
-        <div class="about-image-wrap" data-aos="fade-right">
-          <div class="about-img-bg-shape"></div>
-          <div class="about-img-box">
-            <div class="about-avatar">
-              <i class="fas fa-user-md"></i>
-            </div>
-            <div class="about-exp-badge">
-              <span>15+</span>
-              <p>Years of<br/>Excellence</p>
-            </div>
-          </div>
-          <div class="about-certifications">
-            <div class="cert-badge"><i class="fas fa-certificate"></i> FCPS Certified</div>
-            <div class="cert-badge"><i class="fas fa-star"></i> Top Cardiologist</div>
-          </div>
-        </div>
-
-        <div class="about-content" data-aos="fade-left">
-          <div class="section-label">About The Doctor</div>
-          <h2 class="section-title">Meet Dr. <em>Mehidi Hasan</em></h2>
-          <p class="about-subtitle">MBBS (Dhaka) | MD (Cardiology) | FCPS (Medicine)</p>
-          <p class="about-text">
-            Dr. Mehidi Hasan is a highly distinguished Cardiologist and Internal Medicine Specialist with over 15 years of clinical experience. He completed his MBBS from Dhaka Medical College and pursued advanced training in Cardiology both at home and abroad.
-          </p>
-          <p class="about-text">
-            Known for his patient-first philosophy, Dr. Hasan has treated thousands of cardiac patients, performed complex interventional procedures, and contributed significantly to cardiovascular research in Bangladesh.
-          </p>
-
-          <div class="about-skills">
-            <div class="skill-item">
-              <div class="skill-header">
-                <span>Interventional Cardiology</span><span>95%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span>Echocardiography</span><span>90%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span>Internal Medicine</span><span>88%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span>Cardiac Research</span><span>85%</span>
-              </div>
-              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
-            </div>
-          </div>
-
-          <div class="about-actions">
-            <a href="#appointment" class="btn-primary"><i class="fas fa-calendar-check"></i> Book Appointment</a>
-            <a href="#" class="btn-text"><i class="fas fa-download"></i> Download CV</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== SPECIALTIES ========== -->
-  <section class="specialties section-pad bg-light" id="specialties">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="section-label">Medical Specialties</div>
-        <h2 class="section-title">Areas of <em>Expertise</em></h2>
-        <p class="section-desc">Comprehensive cardiac and internal medicine care with cutting-edge diagnostic and treatment modalities.</p>
-      </div>
-
-      <div class="specialties-grid">
-        <div class="specialty-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="sp-icon-wrap">
-            <i class="fas fa-heartbeat"></i>
-          </div>
-          <h3>Interventional Cardiology</h3>
-          <p>Advanced cardiac catheterization, coronary angioplasty, stenting, and complex PCI procedures.</p>
-          <a href="#" class="sp-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="specialty-card" data-aos="fade-up" data-aos-delay="150">
-          <div class="sp-icon-wrap">
-            <i class="fas fa-wave-square"></i>
-          </div>
-          <h3>Echocardiography</h3>
-          <p>Comprehensive cardiac imaging including 2D, 3D echo, stress echo, and TEE procedures.</p>
-          <a href="#" class="sp-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="specialty-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="sp-icon-wrap">
-            <i class="fas fa-lungs-virus"></i>
-          </div>
-          <h3>Heart Failure Management</h3>
-          <p>Specialized care for acute and chronic heart failure with advanced device therapy options.</p>
-          <a href="#" class="sp-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="specialty-card" data-aos="fade-up" data-aos-delay="250">
-          <div class="sp-icon-wrap">
-            <i class="fas fa-stethoscope"></i>
-          </div>
-          <h3>Internal Medicine</h3>
-          <p>Comprehensive diagnosis and treatment of complex internal medicine conditions and diseases.</p>
-          <a href="#" class="sp-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="specialty-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="sp-icon-wrap">
-            <i class="fas fa-brain"></i>
-          </div>
-          <h3>Hypertension & Stroke</h3>
-          <p>Expert management of hypertension, stroke prevention, and cardiovascular risk reduction.</p>
-          <a href="#" class="sp-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="specialty-card" data-aos="fade-up" data-aos-delay="350">
-          <div class="sp-icon-wrap">
-            <i class="fas fa-pills"></i>
-          </div>
-          <h3>Preventive Cardiology</h3>
-          <p>Holistic cardiac health programs, lifestyle modification, and preventive care strategies.</p>
-          <a href="#" class="sp-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== SERVICES ========== -->
-  <section class="services section-pad" id="services">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="section-label">What We Offer</div>
-        <h2 class="section-title">Clinical <em>Services</em></h2>
-        <p class="section-desc">State-of-the-art diagnostic and treatment services delivered with precision and care.</p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
-          <i class="fas fa-heart"></i>
-          <span>ECG & Holter Monitoring</span>
-        </div>
-        <div class="service-item" data-aos="zoom-in" data-aos-delay="130">
-          <i class="fas fa-x-ray"></i>
-          <span>Cardiac CT Angiography</span>
-        </div>
-        <div class="service-item" data-aos="zoom-in" data-aos-delay="160">
-          <i class="fas fa-tachometer-alt"></i>
-          <span>Stress Testing</span>
-        </div>
-        <div class="service-item" data-aos="zoom-in" data-aos-delay="190">
-          <i class="fas fa-microscope"></i>
-          <span>Cardiac Biomarkers</span>
-        </div>
-        <div class="service-item" data-aos="zoom-in" data-aos-delay="220">
-          <i class="fas fa-procedures"></i>
-          <span>Coronary Angioplasty</span>
-        </div>
-        <div class="service-item" data-aos="zoom-in" data-aos-delay="250">
-          <i class="fas fa-syringe"></i>
-          <span>Pacemaker Implantation</span>
-        </div>
-        <div class="service-item" data-aos="zoom-in" data-aos-delay="280">
-          <i class="fas fa-clipboard-list"></i>
-          <span>Preventive Checkups</span>
-        </div>
-        <div class="service-item" data-aos="zoom-in" data-aos-delay="310">
-          <i class="fas fa-video"></i>
-          <span>Online Consultation</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== EXPERIENCE / TIMELINE ========== -->
-  <section class="experience section-pad bg-light" id="experience">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="section-label">Career Journey</div>
-        <h2 class="section-title">Education & <em>Experience</em></h2>
-      </div>
-
-      <div class="timeline-tabs">
-        <button class="tab-btn active" data-tab="education">
-          <i class="fas fa-graduation-cap"></i> Education
-        </button>
-        <button class="tab-btn" data-tab="work">
-          <i class="fas fa-briefcase-medical"></i> Work Experience
-        </button>
-        <button class="tab-btn" data-tab="awards">
-          <i class="fas fa-trophy"></i> Awards
-        </button>
-      </div>
-
-      <div class="timeline-content" id="educationTab">
-        <div class="timeline">
-          <div class="tl-item" data-aos="fade-right">
-            <div class="tl-dot"></div>
-            <div class="tl-year">2006 – 2012</div>
-            <div class="tl-card">
-              <h4>MBBS</h4>
-              <p>Dhaka Medical College, University of Dhaka</p>
-              <span class="tl-badge">Graduated with Honors</span>
-            </div>
-          </div>
-          <div class="tl-item" data-aos="fade-left">
-            <div class="tl-dot"></div>
-            <div class="tl-year">2013 – 2015</div>
-            <div class="tl-card">
-              <h4>MD – Cardiology</h4>
-              <p>Bangabandhu Sheikh Mujib Medical University (BSMMU)</p>
-              <span class="tl-badge">Merit Position</span>
-            </div>
-          </div>
-          <div class="tl-item" data-aos="fade-right">
-            <div class="tl-dot"></div>
-            <div class="tl-year">2016 – 2018</div>
-            <div class="tl-card">
-              <h4>FCPS – Medicine</h4>
-              <p>Bangladesh College of Physicians and Surgeons (BCPS)</p>
-              <span class="tl-badge">Fellowship</span>
-            </div>
-          </div>
-          <div class="tl-item" data-aos="fade-left">
-            <div class="tl-dot"></div>
-            <div class="tl-year">2019</div>
-            <div class="tl-card">
-              <h4>Advanced Interventional Cardiology Training</h4>
-              <p>National Heart Institute, New Delhi, India</p>
-              <span class="tl-badge">International Training</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-content hidden" id="workTab">
-        <div class="timeline">
-          <div class="tl-item" data-aos="fade-right">
-            <div class="tl-dot"></div>
-            <div class="tl-year">2020 – Present</div>
-            <div class="tl-card">
-              <h4>Senior Consultant Cardiologist</h4>
-              <p>Square Hospital Ltd., Dhaka, Bangladesh</p>
-              <span class="tl-badge">Current Position</span>
-            </div>
-          </div>
-          <div class="tl-item" data-aos="fade-left">
-            <div class="tl-dot"></div>
-            <div class="tl-year">2017 – 2020</div>
-            <div class="tl-card">
-              <h4>Associate Consultant</h4>
-              <p>National Heart Foundation Hospital & Research Institute</p>
-              <span class="tl-badge">3 Years</span>
-            </div>
-          </div>
-          <div class="tl-item" data-aos="fade-right">
-            <div class="tl-dot"></div>
-            <div class="tl-year">2014 – 2017</div>
-            <div class="tl-card">
-              <h4>Medical Officer – Cardiology</h4>
-              <p>Dhaka Medical College Hospital</p>
-              <span class="tl-badge">3 Years</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-content hidden" id="awardsTab">
-        <div class="awards-grid">
-          <div class="award-card" data-aos="zoom-in" data-aos-delay="100">
-            <div class="award-icon"><i class="fas fa-trophy"></i></div>
-            <h4>Best Cardiologist Award</h4>
-            <p>Bangladesh Medical Association, 2023</p>
-          </div>
-          <div class="award-card" data-aos="zoom-in" data-aos-delay="150">
-            <div class="award-icon"><i class="fas fa-medal"></i></div>
-            <h4>Excellence in Research</h4>
-            <p>BSMMU Research Foundation, 2022</p>
-          </div>
-          <div class="award-card" data-aos="zoom-in" data-aos-delay="200">
-            <div class="award-icon"><i class="fas fa-star"></i></div>
-            <h4>Outstanding Physician</h4>
-            <p>Healthcare Leadership Summit, 2021</p>
-          </div>
-          <div class="award-card" data-aos="zoom-in" data-aos-delay="250">
-            <div class="award-icon"><i class="fas fa-certificate"></i></div>
-            <h4>Young Achiever Award</h4>
-            <p>South Asian Cardiac Society, 2020</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== GALLERY ========== -->
-  <section class="gallery section-pad" id="gallery">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="section-label">Photo Gallery</div>
-        <h2 class="section-title">Clinical <em>Gallery</em></h2>
-        <p class="section-desc">Glimpses of our state-of-the-art facilities and clinical work.</p>
-      </div>
-
-      <div class="gallery-filter" data-aos="fade-up">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="clinic">Clinic</button>
-        <button class="filter-btn" data-filter="procedure">Procedures</button>
-        <button class="filter-btn" data-filter="awards">Awards</button>
-      </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-item" data-category="clinic" data-aos="zoom-in" data-aos-delay="50">
-          <div class="gallery-img clinic-1">
-            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-          </div>
-          <div class="gallery-caption">Consultation Room</div>
-        </div>
-        <div class="gallery-item" data-category="procedure" data-aos="zoom-in" data-aos-delay="100">
-          <div class="gallery-img procedure-1">
-            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-          </div>
-          <div class="gallery-caption">Cath Lab Procedure</div>
-        </div>
-        <div class="gallery-item" data-category="clinic" data-aos="zoom-in" data-aos-delay="150">
-          <div class="gallery-img clinic-2">
-            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-          </div>
-          <div class="gallery-caption">Patient Consultation</div>
-        </div>
-        <div class="gallery-item" data-category="awards" data-aos="zoom-in" data-aos-delay="200">
-          <div class="gallery-img awards-1">
-            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-          </div>
-          <div class="gallery-caption">BMA Award 2023</div>
-        </div>
-        <div class="gallery-item" data-category="procedure" data-aos="zoom-in" data-aos-delay="250">
-          <div class="gallery-img procedure-2">
-            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-          </div>
-          <div class="gallery-caption">Echo Procedure</div>
-        </div>
-        <div class="gallery-item" data-category="awards" data-aos="zoom-in" data-aos-delay="300">
-          <div class="gallery-img awards-2">
-            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
-          </div>
-          <div class="gallery-caption">Medical Conference</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== TESTIMONIALS ========== -->
-  <section class="testimonials section-pad bg-dark-blue" id="testimonials">
-    <div class="container">
-      <div class="section-header light" data-aos="fade-up">
-        <div class="section-label">Patient Reviews</div>
-        <h2 class="section-title">What Patients <em>Say</em></h2>
-      </div>
-
-      <div class="testimonials-slider" data-aos="fade-up">
-        <div class="testimonials-track" id="testimonialsTrack">
-          <div class="testimonial-card">
-            <div class="testi-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-            <p class="testi-text">"Dr. Mehidi Hasan is an exceptional cardiologist. His thorough examination, clear explanation of my condition, and the excellent treatment plan made me feel confident and cared for. My heart health has improved dramatically."</p>
-            <div class="testi-author">
-              <div class="testi-avatar"><i class="fas fa-user"></i></div>
-              <div>
-                <strong>Rahim Uddin</strong>
-                <span>Cardiac Patient, Dhaka</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testi-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-            <p class="testi-text">"I had been suffering from heart issues for years. Dr. Hasan's expertise and compassionate approach changed my life. The coronary angioplasty he performed was successful and I am now living a healthier life."</p>
-            <div class="testi-author">
-              <div class="testi-avatar"><i class="fas fa-user"></i></div>
-              <div>
-                <strong>Nasreen Akter</strong>
-                <span>Angioplasty Patient, Chittagong</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testi-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-            </div>
-            <p class="testi-text">"A truly dedicated physician. Dr. Hasan took time to listen to all my concerns, explained every aspect of my treatment in simple language, and his follow-up care is excellent. Highly recommended!"</p>
-            <div class="testi-author">
-              <div class="testi-avatar"><i class="fas fa-user"></i></div>
-              <div>
-                <strong>Karim Sheikh</strong>
-                <span>Heart Failure Patient, Sylhet</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testi-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-            <p class="testi-text">"Best cardiologist in Bangladesh! Dr. Hasan's skills and knowledge are unmatched. He identified my condition when other doctors couldn't. His precision and care during the procedure was remarkable."</p>
-            <div class="testi-author">
-              <div class="testi-avatar"><i class="fas fa-user"></i></div>
-              <div>
-                <strong>Farida Begum</strong>
-                <span>Hypertension Patient, Rajshahi</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="slider-controls">
-          <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
-          <div class="slider-dots" id="sliderDots"></div>
-          <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== APPOINTMENT ========== -->
-  <section class="appointment section-pad" id="appointment">
-    <div class="container">
-      <div class="appointment-inner">
-        <div class="appoint-info" data-aos="fade-right">
-          <div class="section-label">Get In Touch</div>
-          <h2 class="section-title">Book an <em>Appointment</em></h2>
-          <p>Schedule your consultation with Dr. Mehidi Hasan today. We are here to provide you with the highest standard of cardiac care.</p>
-
-          <div class="appoint-schedule">
-            <h4><i class="fas fa-clock"></i> Chamber Schedule</h4>
-            <div class="schedule-list">
-              <div class="schedule-item">
-                <span class="day">Saturday – Thursday</span>
-                <span class="time">10:00 AM – 2:00 PM</span>
-              </div>
-              <div class="schedule-item">
-                <span class="day">Saturday – Thursday</span>
-                <span class="time">5:00 PM – 9:00 PM</span>
-              </div>
-              <div class="schedule-item closed">
-                <span class="day">Friday</span>
-                <span class="time">Closed</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="appoint-contact">
-            <a href="tel:+8801712345678" class="contact-chip">
-              <i class="fas fa-phone-alt"></i>
-              <div><small>Call Now</small><strong>+880 1712-345678</strong></div>
-            </a>
-            <a href="https://wa.me/8801712345678" class="contact-chip whatsapp">
-              <i class="fab fa-whatsapp"></i>
-              <div><small>WhatsApp</small><strong>Chat with Us</strong></div>
-            </a>
-          </div>
-        </div>
-
-        <div class="appoint-form-wrap" data-aos="fade-left">
-          <form class="appoint-form" id="appointmentForm">
-            <h3><i class="fas fa-calendar-plus"></i> Request Appointment</h3>
-            <div class="form-row">
-              <div class="form-group">
-                <label><i class="fas fa-user"></i> Full Name *</label>
-                <input type="text" placeholder="Your Full Name" required />
-              </div>
-              <div class="form-group">
-                <label><i class="fas fa-phone"></i> Phone Number *</label>
-                <input type="tel" placeholder="+880 XXXXXXXXXX" required />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label><i class="fas fa-envelope"></i> Email Address</label>
-                <input type="email" placeholder="your@email.com" />
-              </div>
-              <div class="form-group">
-                <label><i class="fas fa-calendar"></i> Preferred Date *</label>
-                <input type="date" required />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label><i class="fas fa-clock"></i> Preferred Time *</label>
-                <select required>
-                  <option value="">Select Time Slot</option>
-                  <option>10:00 AM – 11:00 AM</option>
-                  <option>11:00 AM – 12:00 PM</option>
-                  <option>12:00 PM – 1:00 PM</option>
-                  <option>5:00 PM – 6:00 PM</option>
-                  <option>6:00 PM – 7:00 PM</option>
-                  <option>7:00 PM – 8:00 PM</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label><i class="fas fa-stethoscope"></i> Reason for Visit</label>
-                <select>
-                  <option value="">Select Reason</option>
-                  <option>Chest Pain</option>
-                  <option>Heart Checkup</option>
-                  <option>Hypertension</option>
-                  <option>Follow-up Visit</option>
-                  <option>Other</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group full">
-              <label><i class="fas fa-comment-medical"></i> Additional Message</label>
-              <textarea placeholder="Describe your symptoms or any additional information..." rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn-submit">
-              <i class="fas fa-paper-plane"></i> Submit Appointment Request
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CONTACT ========== -->
-  <section class="contact section-pad bg-light" id="contact">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <div class="section-label">Find Us</div>
-        <h2 class="section-title">Contact <em>Information</em></h2>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="cc-icon"><i class="fas fa-map-marker-alt"></i></div>
-          <h4>Chamber Address</h4>
-          <p>Square Hospital Ltd.<br/>18/F, Bir Uttam Qazi Nuruzzaman Sarak<br/>West Panthapath, Dhaka-1205</p>
-        </div>
-        <div class="contact-card" data-aos="fade-up" data-aos-delay="150">
-          <div class="cc-icon"><i class="fas fa-phone-alt"></i></div>
-          <h4>Phone & Emergency</h4>
-          <p>Appointment: +880 1712-345678<br/>Emergency: +880 10616-717171<br/>Hospital: +880 2-8159457</p>
-        </div>
-        <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="cc-icon"><i class="fas fa-envelope"></i></div>
-          <h4>Email</h4>
-          <p>dr.mehidi@example.com<br/>appointments@example.com</p>
-        </div>
-        <div class="contact-card" data-aos="fade-up" data-aos-delay="250">
-          <div class="cc-icon"><i class="fas fa-clock"></i></div>
-          <h4>Consultation Hours</h4>
-          <p>Sat – Thu: 10 AM – 2 PM<br/>Sat – Thu: 5 PM – 9 PM<br/>Friday: Closed</p>
-        </div>
-      </div>
-
-      <div class="map-container" data-aos="fade-up">
-        <div class="map-placeholder">
-          <i class="fas fa-map-marked-alt"></i>
-          <p>Square Hospital, West Panthapath, Dhaka</p>
-          <a href="https://maps.google.com" target="_blank" class="btn-primary">
-            <i class="fas fa-directions"></i> Get Directions
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="footer-main">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-about">
-            <a href="#" class="footer-logo">
-              <i class="fas fa-stethoscope"></i>
-              <div>
-                <span>Dr. Mehidi Hasan</span>
-                <small>MBBS, MD, FCPS</small>
-              </div>
-            </a>
-            <p>Committed to excellence in cardiac care and patient well-being. Providing compassionate, evidence-based treatment for over 15 years.</p>
-            <div class="footer-social">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-          </div>
-
-          <div class="footer-links">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
-              <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
-              <li><a href="#specialties"><i class="fas fa-chevron-right"></i> Specialties</a></li>
-              <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
-              <li><a href="#experience"><i class="fas fa-chevron-right"></i> Experience</a></li>
-              <li><a href="#appointment"><i class="fas fa-chevron-right"></i> Book Appointment</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-services">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#"><i class="fas fa-chevron-right"></i> Interventional Cardiology</a></li>
-              <li><a href="#"><i class="fas fa-chevron-right"></i> Echocardiography</a></li>
-              <li><a href="#"><i class="fas fa-chevron-right"></i> Heart Failure Care</a></li>
-              <li><a href="#"><i class="fas fa-chevron-right"></i> Hypertension Mgmt.</a></li>
-              <li><a href="#"><i class="fas fa-chevron-right"></i> Preventive Cardiology</a></li>
-              <li><a href="#"><i class="fas fa-chevron-right"></i> Online Consultation</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-contact">
-            <h4>Contact Us</h4>
-            <ul>
-              <li><i class="fas fa-map-marker-alt"></i> Square Hospital, West Panthapath, Dhaka-1205</li>
-              <li><i class="fas fa-phone-alt"></i> +880 1712-345678</li>
-              <li><i class="fas fa-envelope"></i> dr.mehidi@example.com</li>
-              <li><i class="fas fa-clock"></i> Sat – Thu: 10 AM – 2 PM & 5 – 9 PM</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container">
-        <p>© 2025 Dr. Mehidi Hasan. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> for Healthcare</p>
-        <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Sitemap</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Back to Top -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
-  <!-- Success Modal -->
-  <div class="modal-overlay" id="successModal">
-    <div class="modal-box">
-      <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
-      <h3>Appointment Requested!</h3>
-      <p>Your appointment request has been submitted successfully. We will contact you within 24 hours to confirm your booking.</p>
-      <button class="btn-primary" id="modalClose">Close</button>
     </div>
   </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- ───── FOOTER ───── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo"><span>Excel</span>Pro</div>
+    <p class="footer-copy">© 2025 ExcelPro. Built with passion in Bangladesh 🇧🇩</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- back to top -->
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
 </body>
 </html>
